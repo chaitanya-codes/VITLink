@@ -29,7 +29,7 @@ export default function Home() {
 			<main className="m-28">
 				<div className="slogan mb-4">
 					Discover more than
-					<p className="slogan-blue">500+ Internships ,Research opportunities & Connect to alumini</p>
+					<p className="slogan-blue">500+ Internships ,Research opportunities & Connect to aluminiiiiiii</p>
 				</div>
 				<p className="grey-text">Great platform for the job seeker</p>
 				<p className="grey-text"> that searching for new career heights and passionate about startups.</p>
