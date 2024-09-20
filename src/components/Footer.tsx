@@ -14,14 +14,14 @@ const Logo = () => (
 	
 export default function Footer(){
     return <footer className="bg-slate-800">
-        <div className="bg-slate-800 flex mt-10 px-20 ">
+        <div className="bg-slate-800 flex mt-10 px-20 fobb">
             <div>
                 <div className="flex"><Logo ></Logo><p className="vfoot1lt ">VITLINK</p></div>
                 <p className="foottexts">Great platform for the internship and research opportunities seeker. Find your dream job easier.</p>
             </div>
             
         
-        <div className=" mr-30 m-10">
+        <div className=" mr-30 m-10 fele">
             <p className="footheads">
                 About
             </p>
@@ -31,7 +31,7 @@ export default function Footer(){
             <p className="foottexts">Advice</p>
             <p className="foottexts">Privacy Policy</p>
         </div>
-        <div className="m-10">
+        <div className="m-10 fele">
             <p className="footheads">
                 About
             </p>
@@ -41,7 +41,7 @@ export default function Footer(){
             <p className="foottexts">Advice</p>
             <p className="foottexts">Privacy Policy</p>
         </div>
-        <div className="m-10">
+        <div className="m-10 fele">
             <p className="footheads">
                 About
             </p>
@@ -51,7 +51,7 @@ export default function Footer(){
             <p className="foottexts">Advice</p>
             <p className="foottexts">Privacy Policy</p>
         </div>
-        <div className="m-10">
+        <div className="m-10 fele">
             <p className="footheads">
                 Get Job Notifications
             </p>
@@ -63,8 +63,8 @@ export default function Footer(){
         </div>
         
     </div>
-    <div className="footLine"></div>
-    <div className="pb-10 px-20"><p className="foottexts">2024 @ EscroWebz. All rights reserved.</p></div>    
+    <div className="footLine fele"></div>
+    <div className="pt-5 pb-10 px-20 "><p className="foottexts">2024 @ EscroWebz. All rights reserved.</p></div>    
         
     </footer>
 }
