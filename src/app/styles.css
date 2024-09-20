@@ -1,0 +1,9 @@
+.slogan {
+    color: #FFF;
+    font-feature-settings: 'cv11' on;
+    font-family: "Russo One";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 79.2px */
+}
