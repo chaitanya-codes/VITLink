@@ -13,7 +13,7 @@ const Logo = () => (
 );
 	
 export default function Footer(){
-    return <footer className="bg-slate-800">This is my footer @escrowebz
+    return <footer className="bg-slate-800">
         <div className="bg-slate-800 flex mt-10 px-20 ">
             <div>
                 <div className="flex"><Logo ></Logo><p className="vfoot1lt ">VITLINK</p></div>
