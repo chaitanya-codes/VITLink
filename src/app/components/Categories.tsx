@@ -1,16 +1,16 @@
 import React from 'react';
 
-function selectCategory(category: any) {
+function selectCategory(category: string) {
     if (typeof window !== "undefined") {
         alert("YOU CLICKED " + category + " !")
     }
 }
 
 function getCategories() {
-    let categories = ["AI/ML", "NLP", "Electronics", "Automotive",
+    const categories = ["AI/ML", "NLP", "Electronics", "Automotive",
         "Electrical", "Web Development", "Networks", "Cybersecurity"];
 
-    return categories.map((category, index) => (
+    return categories.map((category) => (
         <div className='py-14 px-16 bg-white m-5'>
             <svg className="mb-6" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <g clip-path="url(#clip0_69_18258)">
