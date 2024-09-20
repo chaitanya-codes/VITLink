@@ -3,9 +3,9 @@ import "@/app/styles/hero.css";
 const Hero = () => {
     return (
         <div>
-            <div className="slogan mb-4">
+            <div className="slogan mb-4 font-russo">
                 Discover more than
-                <p className="slogan-blue">500+ Internships ,Research opportunities & Connect to alumini</p>
+                <p className="slogan-blue">500+ Internships, Research opportunities and Mentorship</p>
             </div>
             <p className="grey-text">Great platform for the job seeker</p>
             <p className="grey-text"> that searching for new career heights and passionate about startups.</p>

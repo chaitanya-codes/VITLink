@@ -1,10 +1,8 @@
-import Image from "next/image";
-import "@/app/styles/styles.css";
-
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import Categories from "./components/Categories"
 
-
+import "@/app/styles/styles.css";
 
 export default function Home() {
 	return (
@@ -19,6 +17,8 @@ export default function Home() {
 						<path d="M0 63.5V414H999.712L1192 319.5V0H128.706L0 63.5Z" fill="#4640DE"/>
 					</svg>
 				</div>
+
+				<Categories></Categories>
 				
 			</main>
 		</div>

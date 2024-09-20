@@ -6,14 +6,9 @@
     --Accents-Blue: #26A4FF;
 }
 
-body {
-    
-}
-
 .slogan {
     color: #FFF;
     font-feature-settings: 'cv11' on;
-    font-family: "Russo One";
     font-size: 72px;
     font-style: normal;
     font-weight: 400;
@@ -23,17 +18,17 @@ body {
 .slogan-blue {
     color: var(--Accents-Blue, #26A4FF);
 }
-.grey-text{
+.grey-text {
     color: #bcbdc1 ;
 }
-.drop-shadow{
+.drop-shadow {
     box-shadow: 0px 1px 0px 0px #BFBFBF;
 }
-.sc-icon{
+.sc-icon {
     width: 2.5%;
     height: 2.5%;
     margin-right: 10px;
 }
-.input-s{
+.input-s {
     width: 80%;
 }
