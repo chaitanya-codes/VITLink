@@ -15,7 +15,7 @@ export default function Home() {
 	return (
 		<div>
 			<header>
-				<nav className="flex ml-5 justify-between gap-2 p-6 mx-0 first-of-type:">
+				<nav className="flex ml-5 justify-between gap-2 p-6 mx-0">
 					<Logo />
 					<div className="mr-auto text-white text-xl">
 						<button className="font-redhat mt-3">VITLINK</button>
@@ -33,10 +33,10 @@ export default function Home() {
 			<main className="m-28">
 				<div className="slogan mb-4">
 					Discover more than
-					<p className="slogan-blue">500+ Internships ,Research opportunities & Connect to aluminiiiiiii</p>
+					<p className="slogan-blue">500+ Internships, Research opportunities and Mentorships</p>
 				</div>
 				<p className="grey-text">Great platform for the job seeker</p>
-				<p className="grey-text"> that searching for new career heights and passionate about startups.</p>
+				<p className="grey-text">that searching for new career heights and passionate about startups.</p>
 
 				<div className="bg-white p-10 flex">
 					<div className="flex">
