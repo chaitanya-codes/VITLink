@@ -41,14 +41,13 @@ function getCategories(categories) {
 export const Categories = () => {
     return (
         <div>
+            <div className="mt-10">
+                <p className="ml-4 font-russo inline text-5xl text-white">Latest<span className='text-blue-300'> Research projects opening</span></p>
+            </div>
             <p className="ml-4 font-russo inline text-5xl text-white">Explore by <span className='text-blue-300'>category</span></p>
             <div className='grid grid-cols-4 grid-rows-2'>
                 {getCategories(["AI/ML", "NLP", "Electronics", "Automotive",
-        "Electrical", "Web Development", "Networks", "Cybersecurity"])};
-            </div>
-            <div className="mt-10">
-
-                <p className="ml-4 font-russo inline text-5xl text-white">Latest<span className='text-blue-300'> Research projects opening</span></p>
+                    "Electrical", "Web Development", "Networks", "Cybersecurity"])};
             </div>
         </div>
     )
@@ -59,12 +58,8 @@ export const Internships = () => {
         <div>
             <p className="ml-4 font-russo inline text-5xl text-white">Explore by <span className='text-blue-300'>category</span></p>
             <div className='grid grid-cols-4 grid-rows-2'>
-            {getCategories(["Quantum Dot-Assisted Photonic Signal", "AI-Driven Traffic Flow Optamisation", "Biosensor-Enchanced Disease Detection", "Graphene-Based Flexible Electronics",
-        "Data-Driven Predictive Healthcase", "Cognitive Load Assessment Virtual Reality", "Networks", "Cybersecurity"])};
-                    </div>
-            <div className="mt-10">
-
-                <p className="ml-4 font-russo inline text-5xl text-white">Latest<span className='text-blue-300'> Research projects opening</span></p>
+                {getCategories(["Quantum Dot-Assisted Photonic Signal", "AI-Driven Traffic Flow Optamisation", "Biosensor-Enchanced Disease Detection", "Graphene-Based Flexible Electronics",
+                    "Data-Driven Predictive Healthcase", "Cognitive Load Assessment Virtual Reality", "Networks", "Cybersecurity"])};
             </div>
         </div>
     )
