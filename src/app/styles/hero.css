@@ -1,18 +1,20 @@
-.blue-btn{
+.blue-btn {
     width: 100px;
     margin: 5px;
     padding: 10px;
-    background-color:#4640de;
+    background-color: #4640de;
     color: white;
     font-weight: bold;
 }
-.search-area{
+
+.search-area {
     margin-top: 5px;
     margin-bottom: 5px;
     justify-content: space-between;
     flex: 1;
     align-items: center;
 }
-.search-area input{
+
+.search-area input {
     width: 22.3vw;
 }

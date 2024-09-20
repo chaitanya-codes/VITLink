@@ -1,62 +1,65 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-.vfoot1lt{
+.vfoot1lt {
     color: var(--Color-White, #FFF);
-font-feature-settings: 'cv11' on;
-font-family: "Red Hat Display";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%; /* 36px */
-letter-spacing: -0.24px;
+    font-feature-settings: 'cv11' on;
+    font-family: "Red Hat Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 36px */
+    letter-spacing: -0.24px;
 }
 
-.footheads{
+.footheads {
     color: var(--Neutrals-0, #FFF);
 
-/* Body/Large - SemiBold */
-font-family: Epilogue;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: 160%; /* 28.8px */
+    /* Body/Large - SemiBold */
+    font-family: Epilogue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    /* 28.8px */
 }
 
-.foottexts{
+.foottexts {
     color: var(--Neutrals-20, #D6DDEB);
 
-/* Body/Normal - Regular */
-font-family: Epilogue;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 160%; /* 25.6px */
+    /* Body/Normal - Regular */
+    font-family: Epilogue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 25.6px */
 }
 
-.footInput{
+.footInput {
     display: flex;
-width: 223px;
-padding: 12px 16px;
-align-items: center;
-gap: 10px;
-border: 1px solid var(--Neutrals-20, #D6DDEB);
-background: var(--Neutrals-0, #FFF);
+    width: 223px;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--Neutrals-20, #D6DDEB);
+    background: var(--Neutrals-0, #FFF);
 }
 
-.footerButton{
+.footerButton {
     display: flex;
-padding: 12px 24px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-background: var(--Brands-Primary, #4640DE);
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--Brands-Primary, #4640DE);
 }
 
-.footLine{
+.footLine {
     width: 1192px;
     height: 2px;
     opacity: 0.1;
-background: #FFF;
+    background: #FFF;
 }
