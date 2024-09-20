@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "@/app/styles/styles.css";
 import img from "@/app/images/logo_dark.png";
+
 const Logo = () => (
 	<Image
 	  src={img}// Corrected path, relative to the public folder
@@ -14,15 +15,18 @@ export default function Home() {
 	return (
 		<div>
 			<header>
-				<nav className="flex p-6 mx-0">
-					<div>
-						<button className="justify-self-start self-start">VITLINK</button>
-					</div>
+				<nav className="flex ml-5 justify-between gap-2 p-6 mx-0 first-of-type:">
 					<Logo />
+					<div className="mr-auto text-white text-xl">
+						<button className="font-redhat mt-3">VITLINK</button>
+					</div>
 					<ul className="flex gap-10">
 						{/* <Image src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLn04toNQgLsOGrDNiUifCdidbC8unY2BZV8mrXe5qCN0EZ2N2"></Image> */}
-						<button>Login</button>
-						<button className="mr-8">Sign Up</button>
+						<button className="text-blue-600">Login</button>
+						<svg xmlns="http://www.w3.org/2000/svg" width="1" height="48" viewBox="0 0 1 48" fill="none">
+							<line x1="0.5" y1="1.93721e-08" x2="0.499998" y2="48" stroke="#D6DDEB"/>
+						</svg>
+						<button className="text-white mr-10 px-5 bg-blue-600">Sign Up</button>
 					</ul>
 				</nav>
 			</header>
@@ -43,7 +47,6 @@ export default function Home() {
 						</div>
 				
 				</div>
-
 				<div className="m-32 flex justify-center">
 					<svg xmlns="http://www.w3.org/2000/svg" width="1192" height="414" viewBox="0 0 1192 414" fill="none">
 						<path d="M0 63.5V414H999.712L1192 319.5V0H128.706L0 63.5Z" fill="#4640DE"/>
