@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "@/app/styles/styles.css";
-import img from "@/app/images/logo.png";
+import img from "@/app/images/logo_dark.png";
 const Logo = () => (
 	<Image
 	  src={img}// Corrected path, relative to the public folder
