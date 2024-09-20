@@ -1,4 +1,5 @@
 // import Image from "next/image";
+import "@/app/styles/styles.css";
 
 export default function Home() {
 	return (
@@ -13,13 +14,12 @@ export default function Home() {
 						<button>Sign Up</button>
 						<button>Login</button>
 						<button>Contact Us</button>
-						
 					</ul>
 				</nav>
 			</header>
 			<main>
 				<div className="slogan">
-					Discover more than 
+					Discover more than
 					500+ Internships & Research opportunities
 				</div>
 				<div className="m-32 flex justify-center">
