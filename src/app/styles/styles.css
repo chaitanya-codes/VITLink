@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 :root {
     --Accents-Blue: #26A4FF;
 }
@@ -18,4 +21,7 @@ body {
 
 .slogan-blue {
     color: var(--Accents-Blue, #26A4FF);
+}
+.grey-text{
+    color: #bcbdc1 ;
 }
