@@ -53,6 +53,7 @@ export const Categories = () => {
         </div>
     )
 }
+
 export const Internships = () => {
     return (
         <div>
