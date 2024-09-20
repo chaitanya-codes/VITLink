@@ -1,3 +1,11 @@
+:root {
+    --Accents-Blue: #26A4FF;
+}
+
+body {
+    
+}
+
 .slogan {
     color: #FFF;
     font-feature-settings: 'cv11' on;
@@ -6,4 +14,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 110%; /* 79.2px */
+}
+
+.slogan-blue {
+    color: var(--Accents-Blue, #26A4FF);
 }
