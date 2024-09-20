@@ -3,7 +3,7 @@ import Hero from "./components/Hero"
 import Categories from "./components/Categories"
 import Footer from "@/app/components/Footer";
 import ResearchProjects from "@/app/components/ResearchProjects"
-
+import Blueshape from "./components/Blueshape";
 import "@/app/styles/styles.css";
 
 export default function Home() {
@@ -14,11 +14,13 @@ export default function Home() {
 			</header>
 			<main className="m-28">
 				<Hero></Hero>
-				<div className="m-32 flex justify-center">
+				<Blueshape/>
+				{/* <div className="m-32 flex justify-center">
 					<svg xmlns="http://www.w3.org/2000/svg" width="1192" height="414" viewBox="0 0 1192 414" fill="none">
 						<path d="M0 63.5V414H999.712L1192 319.5V0H128.706L0 63.5Z" fill="#4640DE"/>
+						
 					</svg>
-				</div>
+				</div> */}
 
 				<Categories></Categories>
 				<ResearchProjects></ResearchProjects>
