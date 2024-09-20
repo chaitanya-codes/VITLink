@@ -29,7 +29,7 @@ function getCategories() {
             </svg>
             <p className='font-russo text-xl font-bold mb-4'>{category}</p>
             <p className='inline pr-6'>235 openings</p>
-            <button onClick={selectCategory(category)}>
+            <button onClick={() => selectCategory(category)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" fill="none">
                     <path d="M16.75 7.22559L1.75 7.22559" stroke="#25324B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M10.7012 1.20124L16.7512 7.22524L10.7012 13.2502" stroke="#25324B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
