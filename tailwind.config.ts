@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         redhat: ['Red Hat Display', 'sans-serif'],
-        russo: ['Russo One']
+        russo: ['Russo One','Ubuntu', 'Oswald']
       },
       colors: {
         background: "var(--background)",

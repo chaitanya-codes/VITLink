@@ -20,11 +20,11 @@ function getProjects() {
     return projects.map((project, index) => (
         <div key={index} className='py-10 px-16 bg-white m-5'>
             <svg className="inline mr-4" xmlns="http://www.w3.org/2000/svg" width="49" height="58" viewBox="0 0 49 58" fill="none">
-                <g clip-path="url(#clip0_69_21370)">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.4938V42.9387L24.4321 57.6283L24.9992 56.7151L24.4321 29.1084L0.840059 14.5107L0 14.4938Z" fill="#449B82" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M48.5995 14.3602V43.2058L24.4316 57.6285V29.1085L47.7143 14.3819L48.5995 14.3602Z" fill="#9BDB9C" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3 0.20401L48.6 14.3597L24.4321 29.5839L0 14.4933L24.3 0.20401Z" fill="#56CDAD" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M36.5063 11.5483L28.2876 16.413V26.2319L20.053 21.2873L12.1348 25.9742V46.497L20.3535 41.4004V30.3534L29.1317 35.957L36.5063 31.3839V11.5483Z" fill="white" />
+                <g clipPath="url(#clip0_69_21370)">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M0 14.4938V42.9387L24.4321 57.6283L24.9992 56.7151L24.4321 29.1084L0.840059 14.5107L0 14.4938Z" fill="#449B82" />
+                    <path fillRule="evenodd" clipRule="evenodd" d="M48.5995 14.3602V43.2058L24.4316 57.6285V29.1085L47.7143 14.3819L48.5995 14.3602Z" fill="#9BDB9C" />
+                    <path fillRule="evenodd" clipRule="evenodd" d="M24.3 0.20401L48.6 14.3597L24.4321 29.5839L0 14.4933L24.3 0.20401Z" fill="#56CDAD" />
+                    <path fillRule="evenodd" clipRule="evenodd" d="M36.5063 11.5483L28.2876 16.413V26.2319L20.053 21.2873L12.1348 25.9742V46.497L20.3535 41.4004V30.3534L29.1317 35.957L36.5063 31.3839V11.5483Z" fill="white" />
                 </g>
                 <defs>
                     <clipPath id="clip0_69_21370">

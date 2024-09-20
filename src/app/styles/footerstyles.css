@@ -63,3 +63,9 @@
     opacity: 0.1;
     background: #FFF;
 }
+
+@media (max-width: 600px) {
+    .fele {
+        display: none;
+    }
+}

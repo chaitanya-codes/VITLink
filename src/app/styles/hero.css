@@ -7,9 +7,9 @@
     font-weight: bold;
 }
 
-.search-area {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.search-area{
+    margin-top: 10px;
+    margin-bottom: 10px;
     justify-content: space-between;
     flex: 1;
     align-items: center;
