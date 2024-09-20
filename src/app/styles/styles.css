@@ -25,3 +25,15 @@ body {
 .grey-text{
     color: #bcbdc1 ;
 }
+.drop-shadow{
+    box-shadow: 0px 1px 0px 0px #BFBFBF;
+    background-color: #939393;
+}
+.sc-icon{
+    width: 2.5%;
+    height: 2.5%;
+    margin-right: 10px;
+}
+.input-s{
+    width: 300px;;
+}
