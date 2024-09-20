@@ -1,7 +1,9 @@
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Categories from "./components/Categories"
-import Footer from "@/components/Footer";
+import Footer from "@/app/components/Footer";
+import ResearchProjects from "@/app/components/ResearchProjects"
+
 import "@/app/styles/styles.css";
 
 export default function Home() {
@@ -19,7 +21,7 @@ export default function Home() {
 				</div>
 
 				<Categories></Categories>
-				
+				<ResearchProjects></ResearchProjects>
 			</main>
 			<Footer></Footer>
 		</div>
