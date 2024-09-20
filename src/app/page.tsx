@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "@/app/styles/styles.css";
 import img from "@/app/images/logo_dark.png";
+import Footer from "@/components/Footer";
 const Logo = () => (
 	<Image
 	  src={img}// Corrected path, relative to the public folder
@@ -18,7 +19,7 @@ export default function Home() {
 					<div>
 						<button className="justify-self-start self-start">VITLINK</button>
 					</div>
-					<Logo />
+					<Logo/>
 					<ul className="flex gap-10">
 						{/* <Image src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLn04toNQgLsOGrDNiUifCdidbC8unY2BZV8mrXe5qCN0EZ2N2"></Image> */}
 						<button>Login</button>
@@ -51,6 +52,7 @@ export default function Home() {
 				</div>
 				
 			</main>
+			<Footer></Footer>
 		</div>
 	);
 }
