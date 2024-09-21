@@ -16,20 +16,19 @@ const Hero = () => {
                 Discover more than
                 <p className="slogan-blue">500+ Internships, Research opportunities and Mentorship</p>
             </div>
-            <p className="grey-text">Great platform for the job seeker</p>
-            <p className="grey-text"> that searching for new career heights and passionate about startups.</p>
+            <p className="grey-text ml-2">Great platform for the job seeker</p>
+            <p className="grey-text ml-2">that searching for new career heights and passionate about startups.</p>
 
-            <div className="bg-white p-10  flex search-area">
+            <div className="flex bg-[#eff1f2] p-6 items-center justify-around mt-[20px] mb-[20px] flex-1 ml-2">
                 <div className='flex'>
                     <SearchIcon></SearchIcon>
-                    <input type="search" className="p-2 input-s drop-shadow" placeholder="Professors, Internships, Projects" />
+                    <input type="search" className="p-2 w-[23vw] drop-shadow" placeholder="Professors, Internships, Projects" />
                 </div>
                 <div className='flex'>
                     <SearchIcon></SearchIcon>
-                    <input type="search" className="p-2 input-s drop-shadow" placeholder="Professors, Internships, Projects" />
+                    <input type="search" className="p-2 w-[23vw] drop-shadow" placeholder="Professors, Internships, Projects" />
                 </div>
-                <button className='blue-btn'>Search VITLink</button>
-
+                <button className='blue-btn w-48'>Search VITLink</button>
             </div>
         </div>
     )

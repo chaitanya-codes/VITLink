@@ -28,6 +28,7 @@ export default function Home() {
 				<ResearchProjects></ResearchProjects>
 
 				<Categories></Categories>
+				<Internships></Internships>
 			</main>
 			<Footer></Footer>
 		</div>
