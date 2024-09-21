@@ -1,8 +1,11 @@
 "use client";
 import Navbar from "../components/Navbar";
 import SearchBar from "../components/SearchBar";
+import { useRouter } from 'next/navigation';
+
 
 export default function NextPage() {
+    
     return (
       <div>
         <Navbar showLogin ={false}/>
@@ -16,7 +19,7 @@ export default function NextPage() {
   }
 function selectProject(project: string) {
     if (typeof window !== "undefined") {
-        alert("YOU CLICKED " + project + " !")
+        alert("YOU CLICKED " + project + " !!!!")
     }
 }
 
@@ -27,6 +30,14 @@ function Capsule(text) {
 }
 
 function getProjects() {
+    const router = useRouter(); // Initialize useRouter
+
+    
+    const handleNavigate = (fname) => {
+        // Navigate to '/about' and pass query parameters
+        router.push(`/faculty?name=${fname}&age=${30}`);
+      };
+    
     const projects = ["Anand Prakash", "John Wick ", "Super Man", "Bat Man", "Spider Man",
         "Varun", "Vishnu", "Gaurav Tas", "Reick static"];
 
@@ -45,7 +56,7 @@ function getProjects() {
                     </clipPath>
                 </defs>
             </svg>
-            <button className="inline" onClick={() => selectProject(project)}>
+            <button className="inline" onClick={() => handleNavigate(project)}>
                 <p className='font-russo text-lg mb-2'>{project}</p>
             </button>
             <div className='mt-3'>

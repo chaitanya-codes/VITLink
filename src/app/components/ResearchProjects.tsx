@@ -1,9 +1,11 @@
 "use client";
 import React from 'react'
 
-function selectProject(project: string) {
-    if (typeof window !== "undefined") {
-        alert("YOU CLICKED " + project + " !")
+
+
+function openPage(project: string){
+    if(typeof window !== "undefined"){
+        alert("you clicked "+project)
     }
 }
 
@@ -32,7 +34,7 @@ function getProjects() {
                     </clipPath>
                 </defs>
             </svg>
-            <button className="inline" onClick={() => selectProject(project)}>
+            <button className="inline" onClick={() => openPage(project)}>
                 <p className='font-russo text-lg mb-2'>{project}</p>
             </button>
             <div className='mt-3'>
