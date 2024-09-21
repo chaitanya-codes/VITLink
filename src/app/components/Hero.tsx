@@ -33,7 +33,7 @@ const Hero = () => {
                 Discover more than
                 <p className="slogan-blue">500+ Internships, Research opportunities and Mentorship</p>
             </div>
-            <p className="grey-text ml-2">Great platform for the job seeker</p>
+            <p className="grey-text ml-2">Great platform for the opportunity seeker</p>
             <p className="grey-text ml-2">that searching for new career heights and passionate about startups.</p>
 
             <div className="flex bg-[#eff1f2] p-6 items-center justify-around mt-[20px] mb-[20px] flex-1 ml-2">
