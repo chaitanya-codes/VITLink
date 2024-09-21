@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import React from 'react';
 import img from "@/app/images/logo_dark.png";
-import { useRouter } from 'next/navigation'
 
 const Logo = () => (
 	<Image
@@ -12,12 +11,9 @@ const Logo = () => (
 	  alt="Your Name"
     />
 );
+		
+const Navbar = (auth) => {
 
-const Navbar = () => {
-    const router = useRouter();
-    const auth = (login: boolean) => {
-        login ? router.push('/login') : router.push('/signup');
-    }
     return (
         <div>
             <nav className="flex justify-between p-6 mx-0">
