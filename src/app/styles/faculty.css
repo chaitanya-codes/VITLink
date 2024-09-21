@@ -1,0 +1,89 @@
+*{
+    box-sizing:border-box;
+}
+
+.facultyPro{
+    width:auto;
+    height: 300px;
+    background-color:azure;
+}
+
+.ttext{
+    color: var(--Neutrals-60, #7C8493);
+
+/* Body/Normal - Regular */
+font-family: Epilogue;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 25.6px */
+}
+.bigname{
+    color: var(--Neutrals-100, #25324B);
+font-feature-settings: 'cv11' on;
+font-family: "Russo One";
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 110%; /* 52.8px */
+}
+.shortdes{
+    color: var(--Brands-Primary, #4640DE);
+
+/* Body/Normal - SemiBold */
+font-family: Epilogue;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; /* 25.6px */
+}
+.loc{
+    font-family: Epilogue;
+font-size: 16px;
+font-style: normal;
+}
+
+.botbox{
+    width:auto;
+    height: 750px;
+    background-color:rgb(255, 255, 255);
+}
+.leftbox{
+    width: 25lh;
+}
+
+.alprofile{
+    color: var(--Neutrals-100, #25324B);
+font-family: "Russo One";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 38.4px */
+}
+.smolprofile{
+    align-self: stretch;
+    color: var(--Neutrals-80, #515B6F);
+
+/* Body/Normal - Regular */
+font-family: Epilogue;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 25.6px */
+}
+.smoldetails{
+    color: var(--Brands-Primary, #4640DE);
+
+/* Body/Normal - Medium */
+font-family: Epilogue;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 25.6px */
+
+padding: 8px;
+align-items: flex-start;
+gap: 16px;
+border: 1px solid var(--Brands-Primary, #4640DE);
+}
+

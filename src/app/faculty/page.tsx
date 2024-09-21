@@ -2,8 +2,10 @@
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 import img from "@/app/images/logo.png";
-import img2 from "@/app/images/jobby.png";
-import "@/app/styles/login.css";
+import img2 from "@/app/images/anandp.png";
+import img3 from "@/app/images/html5.png";
+import img4 from "@/app/images/johnwick.jpg";
+import "@/app/styles/faculty.css";
 import { useRouter } from "next/navigation";
 
 import { useSearchParams } from 'next/navigation';
@@ -16,77 +18,75 @@ const Logo = () => (
     alt="LOGO"
   />
 );
-
-const Jobby = () => (
+const SkillH = () => (
+    <Image
+      src={img3}// Corrected path, relative to the public folder
+      height={50} // Desired height
+      width={50} // Desired width
+      alt="html5"
+    />
+  );
+const picarray = [img2,img4];
+const Alim = () => (
   <div>
     <Image
       src={img2}// Corrected path, relative to the public folder
-      height={700} // Desired height
-      width={500} // Desired width
+      height={200} // Desired height
+      width={200} // Desired width
       alt="Man"
     />
-    <div className="w-[20vw] h-[30vh] bg-white relative bottom-40 left-44">
-      <div className="bg-blue-600 size-20 rounded-full inline-block absolute right-5 -top-7  border-gray-300 border-8"></div>
-      <p className="font-bold text-gray-500 ml-4 pt-4">Adam Sandler</p>
-      <p className="text-gray-500 ml-4">Lead Engineer at Canva</p>
-      <blockquote className="pl-20 pt-8 font-bold">“Great platform for the opportunity seeker that searching for new career heights.”</blockquote>
-    </div>
+    
   </div>
 
 );
 
-const changeColor = (target) => {
-  target.style.backgroundColor = "var(--Lights-Blue, #E9EBFD)"
-  Array.from(document.getElementsByClassName("but")).filter(e => e != target)[0].style.backgroundColor = "#FFF";
-}
 
 export default function NextPage({req}) {
     const searchParams = useSearchParams();
 
   // Retrieve query parameters
   const name = searchParams.get('name');
-  const age = searchParams.get('age');
+  const index = searchParams.get('inde');
    
   return (
     <div>
       <Navbar showLogin={false} />
-      <div className="flex">
-        <div className="pbox">
-          <div className="photu  mb-0">
-            <Jobby></Jobby>
-          </div>
+      <div className="facultyPro py-10">
+        <div className="ttext mx-10"><p >Home/Alumni/{name}{index}</p></div>
+        <div className="flex fp2">
+            <div className="alphotu my-10 mx-10"><Alim></Alim></div>
+            <div className="fpside">
+                <div className="bigname mx-20 mt-10" >{name}{index}{index}</div>
+                <div className="shortdes mx-20 "><p>A white hat hacker who’s earned bug bounties from Facebook, Twitter, and Uber</p></div>
+                <div className="loc mx-20 my-10">Location: {name}</div>
+            </div>
         </div>
-        <div className="lbox container px-20">
-          <div className="2buts flex justify-center gap-2 mt-1 ml-20">
-            <button onClick={(e) => changeColor(e.target)} className="but bg-[var(--Lights-Blue,_#E9EBFD)]">STUDENT</button>
-            <button onClick={(e) => changeColor(e.target)} className="but bg-[var(--Neutrals-0,_#FFF)]">COMPANY</button>
-          </div>
-          <p className="bigText py-10">Get, Create More {name}</p>
-          <button className="Vbut flex">
-            <div><Logo></Logo></div>
-            <div className="vitText"><p>Log in with VIT Mail</p></div>
-          </button>
-          <div className="thinL flex">
-            <div className="l1 mt-5"></div>
-            <p className="sstt mt-2">Or Sign Up</p>
-            <div className="l2 mt-5"></div>
-          </div>
-          <div>
-            <p className="inlab" >Full Name</p>
-            <input placeholder="Name" className="form"></input>
-            <p className="inlab">VIT Mail</p>
-            <input placeholder="Vit Email" className="form"></input>
-            <p className="inlab">Password</p>
-            <input placeholder="" type="password" className="form"></input>
-          </div>
-          <button className="botbut my-5">SUBMIT</button>
-          <h6 className="">By clicking &aposContinue&apos, you acknowledge that you have read and accept the Terms of Service and Privacy Policy.</h6>
-          <h1>This is the Next Page</h1>
-
-        </div>
-
       </div>
-
+      <div className="botbox flex">
+        <div className="leftbox mx-20 py-10">
+            <div className="alprofile my-10"><p>Alumni Profile</p></div>
+            <div className="smolprofile "><p>Anand Prakash is a Bangalore-based ethical hacker. He started his career as a security engineer in Flipkart in 2014. He founded AppSecure, a cyber security startup in May 2016. He then collaborated with another co-founder, Rohit Raj, and rebranded his startup as Hakerhive.Prakash was featured in the Forbes "30 under 30 Asia" list. In 2015, Facebook awarded him US$15,000 as bounty for logging in without an account. He received US$5,000 from Uber for booking a free ride and US$4,700 from Tinder. He has worked with the Bengaluru-based food tech startup.
+            Blog Link : https://www.freecodecamp.org/news/meet-anand-prakash-a-white-hat-hacker-whos-earned-bug-bounties-from-facebook-twitter-and-uber-74e30d709b97/</p></div>
+            <div className="alprofile my-10"><p>Contact</p></div>
+            <div className="contact flex flex-wrap ">
+                <div className="smoldetails mx-5 my-3"><p>twitter.com/Sagar122</p></div>
+                <div className="smoldetails mx-5 my-3"><p>twitter.com/Sagar122</p></div>
+                <div className="smoldetails mx-5 my-3"><p>twitter.com/Sagar122</p></div>
+            </div>
+            
+        </div>
+        <div className="rightbox mx-20 my-10">
+            <div className="skillz alprofile my-10"><p>Skills</p></div>
+            <div className="smolprofile "><p>Learn about the technology and tools that {name} uses. </p></div>
+            <div className="skillbox flex flex-wrap">
+              <div className="Skillpic my-10 mx-10"><SkillH></SkillH></div>
+              <div className="Skillpic my-10 mx-10"><SkillH></SkillH></div>
+              <div className="Skillpic my-10 mx-10"><SkillH></SkillH></div>
+              <div className="Skillpic my-10 mx-10"><SkillH></SkillH></div>
+              <div className="Skillpic my-10 mx-10"><SkillH></SkillH></div>
+            </div>
+        </div>
+      </div>
     </div>
   );
 }

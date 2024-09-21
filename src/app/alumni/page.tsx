@@ -33,13 +33,13 @@ function getProjects() {
     const router = useRouter(); // Initialize useRouter
 
     
-    const handleNavigate = (fname) => {
+    const handleNavigate = (fname,inde) => {
         // Navigate to '/about' and pass query parameters
-        router.push(`/faculty?name=${fname}&age=${30}`);
+        router.push(`/faculty?name=${fname}&=${inde}`);
       };
     
-    const projects = ["Anand Prakash", "John Wick ", "Super Man", "Bat Man", "Spider Man",
-        "Varun", "Vishnu", "Gaurav Tas", "Reick static"];
+    const projects = [["Anand Prakash",0], ["John Wick ",1], ["Super Man",2], ["Bat Man",3], ["Spider Man",4],
+        ["Varun",5], ["Vishnu",6], ["Gaurav Tas",7], ["Reick static",8]];
 
     return projects.map((project, index) => (
         <div key={index} className='py-10 px-16 bg-white m-5'>
@@ -56,8 +56,8 @@ function getProjects() {
                     </clipPath>
                 </defs>
             </svg>
-            <button className="inline" onClick={() => handleNavigate(project)}>
-                <p className='font-russo text-lg mb-2'>{project}</p>
+            <button className="inline" onClick={() => handleNavigate(project[0],project[1])}>
+                <p className='font-russo text-lg mb-2'>{project[0]}</p>
             </button>
             <div className='mt-3'>
             
