@@ -25,7 +25,7 @@ const Hero = () => {
         }
     const alumini_connect = () =>
         {
-            router.push('/alumini');
+            router.push('/alumni');
         }
     return (
         <div>
