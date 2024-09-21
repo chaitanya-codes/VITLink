@@ -5,7 +5,7 @@ import img from "@/app/images/logo.png";
 import img2 from "@/app/images/jobby.png";
 import "@/app/styles/login.css";
 import { useRouter } from "next/navigation";
-import { NextRequest } from "next/server";
+
 import { useSearchParams } from 'next/navigation';
 
 const Logo = () => (
