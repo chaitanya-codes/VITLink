@@ -12,6 +12,7 @@
     justify-content: space-between;
     flex: 1;
     align-items: center;
+    margin-right: 40px;
 }
 .search-area input{
     width: 22.3vw;

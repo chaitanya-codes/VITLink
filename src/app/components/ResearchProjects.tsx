@@ -7,7 +7,7 @@ function selectProject(project: string) {
     }
 }
 
-function Capsule(text: any) {
+function Capsule(text) {
     return (
         <div className="inline rounded-[80px] p-2 bg-[rgba(86,_205,_173,_0.10)]">{text}</div>
     )
