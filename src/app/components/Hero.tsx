@@ -48,7 +48,7 @@ const Hero = () => {
                 <button  onClick={() => intership_route()} className='blue-btn w-48'>Find Internships</button>
                 <button  onClick={() => research_opportunities()} className='blue-btn w-48'>Find Research Opportunities</button>
 
-                <button onClick={() => alumini_connect()} className='blue-btn w-48'>Connect to alumini</button>
+                <button onClick={() => alumini_connect()} className='blue-btn w-48'>Connect to alumni</button>
             </div>
         </div>
     )
