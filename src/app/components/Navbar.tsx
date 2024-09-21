@@ -4,6 +4,9 @@ import React from 'react';
 import img from "@/app/images/logo_dark.png";
 import { useRouter } from 'next/navigation'; // Import useRouter
 
+import { signIn } from "@/auth"
+ 
+
 const Logo = () => (
 	<Image
 	  src={img}// Corrected path, relative to the public folder
