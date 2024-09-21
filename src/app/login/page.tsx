@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "../components/Navbar";
 import "@/app/styles/login.css";
 import Image from "next/image";

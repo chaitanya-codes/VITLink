@@ -8,7 +8,7 @@ export default function NextPage() {
       <div>
         <Navbar showLogin ={false}/>
         <div className="mx-28">
-          <h1 className="text-4xl font-bold slogan-blue mb-4">Internship</h1>
+          <h1 className="text-4xl font-bold slogan-blue mb-4">Research</h1>
         </div>
         <SearchBar></SearchBar>
         <ResearchProjects></ResearchProjects>
