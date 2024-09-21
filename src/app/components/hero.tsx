@@ -3,6 +3,7 @@
 import React from 'react'
 import "@/app/styles/hero.css";
 import { useRouter } from 'next/navigation'; // Import useRouter
+import Typewriter from 'typewriter-effect';
 
 // function SearchIcon() {
 //     return (
@@ -24,18 +25,26 @@ const Hero = () => {
     const alumini_connect = () => {
         router.push('/alumni');
     }
+
     return (
         <div>
             <div className="slogan mb-4 font-russo">
-                Discover more than
-                <p className="slogan-blue">500+ Internships,</p>
+                Discover
+                <Typewriter
+                    options={{
+                        strings: ['500+ Internships', 'Research opportunities', '& Alumni Connection'],
+                        autoStart: true,
+                        loop: true,
+                    }}
+                />
+                {/* <p className="slogan-blue">500+ Internships,</p>
                 <p className="slogan-blue">Research opportunities </p>
-                <p className="slogan-blue">& Alumni Connection</p>
+                <p className="slogan-blue">& Alumni Connection</p> */}
             </div>
             <p className="grey-text ml-2">Great platform for the opportunity seeker</p>
             <p className="grey-text ml-2">that searching for new career heights and passionate about startups.</p>
 
-            <div className="flex bg-[#eff1f2] p-6 items-center justify-around mt-[20px] mb-[20px] flex-1 ml-2">
+            <div className="flex bg-[url(https://as1.ftcdn.net/v2/jpg/01/16/15/38/1000_F_116153804_EmYnusFGJbk0uGY4J1BeuUX0NfmuEpFJ.jpg)] bg-[#eff1f2] p-6 items-center justify-around mt-[20px] mb-[20px] flex-1 ml-2">
                 {/* <div className='flex'>
                     <SearchIcon></SearchIcon>
                     <input type="search" className="p-2 w-[23vw] drop-shadow" placeholder="Professors, Internships, Projects" />
