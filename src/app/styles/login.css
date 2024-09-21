@@ -3,20 +3,8 @@
 }
 
 .but {
-    display: flex;
+    color: var(--Brands-Primary, #4640DE);
     padding: 7px 12px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.lbut {
-    display: flex;
-    padding: 7px 12px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background: ;
 }
 
 .lbox {
