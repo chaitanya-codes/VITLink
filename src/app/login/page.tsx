@@ -21,6 +21,12 @@ const Jobby = () => (
 	  alt="Man"
 	/>
 );
+
+const changeColor = (target) => {
+  target.style.backgroundColor = "var(--Lights-Blue, #E9EBFD)"
+  Array.from(document.getElementsByClassName("but")).filter(e => e != target)[0].style.backgroundColor = "#FFF";
+}
+
 export default function NextPage() {
     return (
       <div>
@@ -32,14 +38,14 @@ export default function NextPage() {
             </div>
           </div>
           <div className="lbox container px-20">
-            <div className="2buts flex ml-20">
-              <button className="but bg-[var(--Lights-Blue,_#E9EBFD)]">JOB SEEKER</button>
-                <button className="but bg-[var(--Neutrals-0,_#FFF)]">COMPANY</button>
+            <div className="2buts flex justify-center gap-2 mt-1 ml-20">
+              <button onClick={(e) => changeColor(e.target)} className="but bg-[var(--Lights-Blue,_#E9EBFD)]">STUDENT</button>
+                <button onClick={(e) => changeColor(e.target)} className="but bg-[var(--Neutrals-0,_#FFF)]">COMPANY</button>
             </div>
             <p className="bigText py-10">Get, Create More Opportunities</p>
             <button className="Vbut flex">
               <div><Logo></Logo></div>
-              <div className="vitText"><p >Log in with VIT Mail</p></div>
+              <div className="vitText"><p>Log in with VIT Mail</p></div>
             </button>
             <div className="thinL flex">
               <div className="l1 mt-5"></div>
@@ -48,11 +54,11 @@ export default function NextPage() {
             </div>
             <div>
               <p className="inlab" >Full Name</p>
-              <input defaultValue="Name" className="form"></input>
+              <input placeholder="Name" className="form"></input>
               <p className="inlab">VIT Mail</p>
-              <input defaultValue="Vit Email" className="form"></input>
+              <input placeholder="Vit Email" className="form"></input>
               <p className="inlab">Password</p>
-              <input defaultValue="" type="password" className="form"></input>
+              <input placeholder="" type="password" className="form"></input>
             </div>
             <button className="botbut my-5">SUBMIT</button>
             <h6 className="">By clicking &aposContinue&apos, you acknowledge that you have read and accept the Terms of Service and Privacy Policy.</h6>

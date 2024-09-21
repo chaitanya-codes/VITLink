@@ -10,7 +10,7 @@ export default function NextPage() {
         <div className="mx-28">
           <h1 className="text-4xl font-bold slogan-blue mb-4">Research</h1>
         </div>
-        <SearchBar></SearchBar>
+        <SearchBar text1="Find by name" text2="Find by company"></SearchBar>
         <ResearchProjects></ResearchProjects>
       </div>
     );
