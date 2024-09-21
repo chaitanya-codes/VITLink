@@ -1,4 +1,5 @@
 import { auth, signIn, signOut } from "@/auth"
+import "@/app/styles/styles.css"; // Adjust to the correct path
 
 export default async function SignIn() {
   const session = await auth();
@@ -15,7 +16,7 @@ export default async function SignIn() {
           await signOut()
         }}
       >
-        <button className="google-signin" type="submit">Sign out</button>
+        <button className=" google-signin" type="submit">Sign out</button>
       </form>
   </>
 )
@@ -26,7 +27,7 @@ export default async function SignIn() {
           await signIn("google")
         }}
       >
-        <button type="submit">Signin with Google</button>
+        <button type="submit  google-signin">Signin with Google</button>
       </form>
     )
   } 
