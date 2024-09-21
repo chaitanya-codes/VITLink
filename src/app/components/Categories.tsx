@@ -40,9 +40,6 @@ function getCategories(categories) {
 export const Categories = () => {
     return (
         <div>
-            <div className="mt-10">
-                <p className="ml-4 font-russo inline text-5xl text-white">Latest<span className='text-blue-300'> Research projects opening</span></p>
-            </div>
             <p className="ml-4 font-russo inline text-5xl text-white">Explore by <span className='text-blue-300'>category</span></p>
             <div className='grid grid-cols-4 grid-rows-2'>
                 {getCategories(["AI/ML", "NLP", "Electronics", "Automotive",
