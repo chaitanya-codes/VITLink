@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+import Navbar from "@/app/components/Navbar";
 import Grid from 'react'
 
 export default function NextPage() {
