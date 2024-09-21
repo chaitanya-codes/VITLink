@@ -4,7 +4,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
-    "noEmit": true,
+    "no Emit": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
