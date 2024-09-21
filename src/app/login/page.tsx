@@ -33,8 +33,8 @@ export default function NextPage() {
           </div>
           <div className="lbox container px-20">
             <div className="2buts flex ml-20">
-              <button className="rbut">JOB SEEKER</button>
-              <button className="lbut">COMPANY</button>
+              <button className="but bg-[var(--Lights-Blue,_#E9EBFD)]">JOB SEEKER</button>
+                <button className="but bg-[var(--Neutrals-0,_#FFF)]">COMPANY</button>
             </div>
             <p className="bigText py-10">Get, Create More Opportunities</p>
             <button className="Vbut flex">
