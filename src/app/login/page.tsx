@@ -1,13 +1,39 @@
-'use client';
+'use client'
 import React from "react";
-
+import {auth} from "@/firebase/config";
+import { useRouter } from 'next/navigation'
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 import img from "@/app/images/logo.png";
+import { motion } from "framer-motion";
 import img2 from "@/app/images/jobby.png";
 
-// Initialize Firebase
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import "../styles/login.css"
 
+const firebaseConfig = {
+
+};
+
+
+const handleGoogleLogin = async (auth) => {
+  const provider = new GoogleAuthProvider();
+  
+  try {
+    const router = useRouter(); // Initialize the Next.js router
+    const result = await signInWithPopup(auth, provider);
+    const userEmail = result.user.email;
+    
+    localStorage.setItem("userEmail", userEmail);
+    
+    router.push("/login");
+    
+  } catch (error) {
+    console.error("Error during Google login:", error);
+  }
+};
 
 const Logo = () => (
   <Image
@@ -77,15 +103,11 @@ export default function NextPage() {
           <p className="inlab" >Full Name</p>
             <input placeholder="Name" className="form"></input>
             <p className="inlab">Password</p>
-            <input placeholder="" type="password" className="form"></input>
-          </div>
-          <button className="botbut my-5">SUBMIT</button>
-          <h6 className="">By clicking &aposContinue&apos, you acknowledge that you have read and accept the Terms of Service and Privacy Policy.</h6>
-          <h1>This is the Next Page</h1>
-
+            <input placeholder="password" type="password" className="form"></input>
+          
+          <button className="botbut my-5">Login</button>
         </div>
-
       </div>
-
+    </div>
   );
 }

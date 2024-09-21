@@ -41,7 +41,7 @@ const Alim = () => (
 );
 
 
-export default function NextPage({req}) {
+export default function NextPage() {
     const searchParams = useSearchParams();
 
   // Retrieve query parameters
