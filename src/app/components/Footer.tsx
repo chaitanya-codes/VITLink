@@ -1,7 +1,7 @@
 "use client";
 import "@/app/styles/footerstyles.css";
 import Image from "next/image";
-import img from "@/app/images/logo-dark.png";
+import img from "@/app/images/logo_dark.png";
 const Logo = () => (
 	<Image
 	  src={img}// Corrected path, relative to the public folder
