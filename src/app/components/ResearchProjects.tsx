@@ -1,5 +1,13 @@
 "use client";
 import React from 'react'
+import { useRouter } from 'next/navigation';
+
+function openPage(project: string){
+    const router = useRouter();
+    if(typeof window !== "undefined"){
+        router.push("/project")
+    }
+}
 
 function Capsule(text) {
     return (
