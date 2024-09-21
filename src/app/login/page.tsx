@@ -55,7 +55,7 @@ export default function NextPage() {
               <input defaultValue="" type="password" className="form"></input>
             </div>
             <button className="botbut my-5">SUBMIT</button>
-            <h6 className="">By clicking 'Continue', you acknowledge that you have read and accept the Terms of Service and Privacy Policy.</h6>
+            <h6 className="">By clicking &aposContinue&apos, you acknowledge that you have read and accept the Terms of Service and Privacy Policy.</h6>
           <h1>This is the Next Page</h1>
 
           </div> 
