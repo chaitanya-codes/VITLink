@@ -2,13 +2,17 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(38, 60, 82);
+}
+
 .but {
     color: var(--Brands-Primary, #4640DE);
     padding: 7px 12px;
 }
 
 .lbox {
-    background-color: #FFF;
+    background-color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
 
