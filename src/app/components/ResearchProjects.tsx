@@ -42,7 +42,6 @@ function getProjects() {
     ))
 }
 
-
 const ResearchProjects = () => {
     return (
         <div>

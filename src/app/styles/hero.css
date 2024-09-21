@@ -1,19 +1,11 @@
-.blue-btn{
-    width: 100px;
+.blue-btn {
     margin: 5px;
     padding: 10px;
-    background-color:#4640de;
+    background-color: #4640de;
     color: white;
     font-weight: bold;
 }
-.search-area{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    justify-content: space-between;
-    flex: 1;
-    align-items: center;
-    margin-right: 40px;
-}
-.search-area input{
+
+.search-area input {
     width: 22.3vw;
 }
