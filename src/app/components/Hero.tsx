@@ -1,5 +1,8 @@
+"use client";
+
 import React from 'react'
 import "@/app/styles/hero.css";
+import { useRouter } from 'next/navigation'; // Import useRouter
 
 function SearchIcon() {
     return (
@@ -10,6 +13,20 @@ function SearchIcon() {
 }
 
 const Hero = () => {
+    const router = useRouter(); // Initialize useRouter
+
+    const intership_route = () =>
+    {
+        router.push('/internship');
+    }
+    const research_opportunities = () =>
+        {
+            router.push('/research');
+        }
+    const alumini_connect = () =>
+        {
+            router.push('/alumini');
+        }
     return (
         <div>
             <div className="slogan mb-4 font-russo">
@@ -20,15 +37,18 @@ const Hero = () => {
             <p className="grey-text ml-2">that searching for new career heights and passionate about startups.</p>
 
             <div className="flex bg-[#eff1f2] p-6 items-center justify-around mt-[20px] mb-[20px] flex-1 ml-2">
-                <div className='flex'>
+                {/* <div className='flex'>
                     <SearchIcon></SearchIcon>
                     <input type="search" className="p-2 w-[23vw] drop-shadow" placeholder="Professors, Internships, Projects" />
                 </div>
                 <div className='flex'>
                     <SearchIcon></SearchIcon>
                     <input type="search" className="p-2 w-[23vw] drop-shadow" placeholder="Professors, Internships, Projects" />
-                </div>
-                <button className='blue-btn w-48'>Search VITLink</button>
+                </div> */}
+                <button  onClick={() => intership_route()} className='blue-btn w-48'>Find Internships</button>
+                <button  onClick={() => research_opportunities()} className='blue-btn w-48'>Find Research Opportunities</button>
+
+                <button onClick={() => alumini_connect()} className='blue-btn w-48'>Connect to alumini</button>
             </div>
         </div>
     )

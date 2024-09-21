@@ -10,7 +10,7 @@ export default function Home() {
 	return (
 		<div>
 			<header>
-				<Navbar></Navbar>
+				<Navbar showLogin ={true}></Navbar>
 			</header>
 			<main className="m-28">
 				<Hero></Hero>
