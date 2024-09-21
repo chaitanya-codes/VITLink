@@ -23,7 +23,8 @@ const Jobby = () => (
 );
 
 const changeColor = (target) => {
-  target.style.backgroundColor = "#FFF"
+  target.style.backgroundColor = "var(--Lights-Blue, #E9EBFD)"
+  Array.from(document.getElementsByClassName("but")).filter(e => e != target)[0].style.backgroundColor = "#FFF";
 }
 
 export default function NextPage() {

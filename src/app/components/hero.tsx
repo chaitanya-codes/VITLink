@@ -15,25 +15,24 @@ import { useRouter } from 'next/navigation'; // Import useRouter
 const Hero = () => {
     const router = useRouter(); // Initialize useRouter
 
-    const intership_route = () =>
-    {
+    const intership_route = () => {
         router.push('/internship');
     }
-    const research_opportunities = () =>
-        {
-            router.push('/research');
-        }
-    const alumini_connect = () =>
-        {
-            router.push('/alumini');
-        }
+    const research_opportunities = () => {
+        router.push('/research');
+    }
+    const alumini_connect = () => {
+        router.push('/alumni');
+    }
     return (
         <div>
             <div className="slogan mb-4 font-russo">
                 Discover more than
-                <p className="slogan-blue">500+ Internships, Research opportunities and Mentorship</p>
+                <p className="slogan-blue">500+ Internships,</p>
+                <p className="slogan-blue">Research opportunities </p>
+                <p className="slogan-blue">& Alumni Connection</p>
             </div>
-            <p className="grey-text ml-2">Great platform for the job seeker</p>
+            <p className="grey-text ml-2">Great platform for the opportunity seeker</p>
             <p className="grey-text ml-2">that searching for new career heights and passionate about startups.</p>
 
             <div className="flex bg-[#eff1f2] p-6 items-center justify-around mt-[20px] mb-[20px] flex-1 ml-2">
