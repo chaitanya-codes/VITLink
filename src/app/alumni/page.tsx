@@ -1,17 +1,29 @@
+<<<<<<< HEAD:src/app/alumini/page.tsx
 "use client";
 import Navbar from "../components/Navbar";
 import SearchBar from "../components/SearchBar";
 
+=======
+import Navbar from "@/app/components/Navbar";
+import Grid from 'react'
+>>>>>>> refs/remotes/origin/main:src/app/alumni/page.tsx
 
 export default function NextPage() {
     return (
       <div>
         <Navbar showLogin ={false}/>
+<<<<<<< HEAD:src/app/alumini/page.tsx
         <div className="mx-28">
           <h1 className="text-4xl font-bold slogan-blue mb-4">Find Your Alumini</h1>
         </div>
         <SearchBar></SearchBar>
         <ResearchProjects></ResearchProjects>
+=======
+        
+        
+
+        <h1>This is the Next Page</h1>
+>>>>>>> refs/remotes/origin/main:src/app/alumni/page.tsx
       </div>
     );
   }

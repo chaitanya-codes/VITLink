@@ -1,39 +1,43 @@
 .custom-shape {
     max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 0;
     background-color: blue;
     align-items: center;
 }
 
-.blueFat{width: 364px;
+.blueFat {
+    width: 364px;
     color: #FFF;
     font-feature-settings: 'cv11' on;
     font-family: "Russo One";
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 110%; /* 44px */}
+    line-height: 110%;
+    /* 44px */
+}
 
-.blueThin{
+.blueThin {
     width: 364px;
     color: #FFF;
 
-/* Body/Normal - Medium */
-font-family: Epilogue;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 160%; /* 25.6px */
-    
+    /* Body/Normal - Medium */
+    font-family: Epilogue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    /* 25.6px */
+
 }
 
-.blueButton{display: flex;
+.blueButton {
+    display: flex;
     padding: 12px 24px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     background: var(--Neutrals-0, #FFF);
 }
-
