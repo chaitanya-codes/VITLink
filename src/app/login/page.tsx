@@ -87,6 +87,5 @@ export default function NextPage() {
 
       </div>
 
-    </div>
   );
 }
