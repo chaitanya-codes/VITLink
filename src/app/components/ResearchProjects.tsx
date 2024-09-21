@@ -1,14 +1,6 @@
 "use client";
 import React from 'react'
 
-
-
-function openPage(project: string){
-    if(typeof window !== "undefined"){
-        alert("you clicked "+project)
-    }
-}
-
 function Capsule(text) {
     return (
         <div className="inline rounded-[80px] p-2 bg-[rgba(86,_205,_173,_0.10)]">{text}</div>
@@ -47,6 +39,9 @@ function getProjects() {
 const ResearchProjects = () => {
     return (
         <div>
+            <div className="mt-10">
+                <p className="ml-4 font-russo inline text-5xl text-white">Latest<span className='text-blue-300'> Research projects opening</span></p>
+            </div>
             <div className='grid grid-cols-2 grid-rows-4'>
                 {getProjects()}
             </div>

@@ -49,30 +49,33 @@ export default function NextPage() {
       <Navbar showLogin={false} />
       <div className="flex">
         <div className="pbox">
-          <div className="photu  mb-0">
+          <div className="photu mb-0">
             <Jobby></Jobby>
           </div>
         </div>
-        <div className="lbox container px-20">
-          <div className="2buts flex justify-center gap-2 mt-1 ml-20">
+        <div className="lbox flex flex-col container px-20 bg-white">
+          <div className="flex gap-2 ml-18">
             <button onClick={(e) => changeColor(e.target)} className="but bg-[var(--Lights-Blue,_#E9EBFD)]">STUDENT</button>
             <button onClick={(e) => changeColor(e.target)} className="but bg-[var(--Neutrals-0,_#FFF)]">COMPANY</button>
           </div>
           <p className="bigText py-10">Get, Create More Opportunities</p>
-          <button className="Vbut flex">
+          <button className="Vbut flex bg-orange-100">
             <div><Logo></Logo></div>
-            <div className="vitText"><p>Log in with VIT Mail</p></div>
+            <div className="vitText"><p className="text-2xl">Log in with VIT Mail</p></div>
           </button>
-          <div className="thinL flex">
+          
+          <div>
+            </div>
+          <h6 className="mt-4">By clicking &apos;Continue&apos;, you acknowledge that you have read and<br/>accept the Terms of Service and Privacy Policy.</h6>
+          
+          <div className="thinL flex mt-16">
             <div className="l1 mt-5"></div>
-            <p className="sstt mt-2">Or Sign Up</p>
             <div className="l2 mt-5"></div>
           </div>
-          <div>
-            <p className="inlab" >Full Name</p>
+          <h2 className=" mt-4 text-slate-800 text-3xl">ADMIN LOGIN:</h2>
+          
+          <p className="inlab" >Full Name</p>
             <input placeholder="Name" className="form"></input>
-            <p className="inlab">VIT Mail</p>
-            <input placeholder="Vit Email" className="form"></input>
             <p className="inlab">Password</p>
             <input placeholder="" type="password" className="form"></input>
           </div>

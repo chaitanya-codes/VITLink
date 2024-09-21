@@ -32,14 +32,11 @@ const Hero = () => {
                 Discover
                 <Typewriter
                     options={{
-                        strings: ['500+ Internships', 'Research opportunities', '& Alumni Connection'],
+                        strings: ['500+ Internships', 'Research opportunities', 'Alumni Connection'],
                         autoStart: true,
                         loop: true,
                     }}
                 />
-                {/* <p className="slogan-blue">500+ Internships,</p>
-                <p className="slogan-blue">Research opportunities </p>
-                <p className="slogan-blue">& Alumni Connection</p> */}
             </div>
             <p className="grey-text ml-2">Great platform for the opportunity seeker</p>
             <p className="grey-text ml-2">that searching for new career heights and passionate about startups.</p>
