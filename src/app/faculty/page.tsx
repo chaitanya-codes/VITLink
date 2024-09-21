@@ -40,7 +40,7 @@ const changeColor = (target) => {
   Array.from(document.getElementsByClassName("but")).filter(e => e != target)[0].style.backgroundColor = "#FFF";
 }
 
-export default function NextPage({req}) {
+export default function NextPage() {
     const searchParams = useSearchParams();
 
   // Retrieve query parameters
