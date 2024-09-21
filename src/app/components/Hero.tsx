@@ -19,7 +19,7 @@ const Hero = () => {
             <p className="grey-text">Great platform for the job seeker</p>
             <p className="grey-text"> that searching for new career heights and passionate about startups.</p>
 
-            <div className="bg-white p-10 flex search-area">
+            <div className="bg-white p-10  flex search-area">
                 <div className='flex'>
                     <SearchIcon></SearchIcon>
                     <input type="search" className="p-2 input-s drop-shadow" placeholder="Professors, Internships, Projects" />
