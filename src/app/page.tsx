@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar"
-import Hero from "./components/Hero";
+import Hero from "./components/hero";
 import {Categories, Internships} from "./components/Categories"
 import Footer from "@/app/components/Footer";
 import ResearchProjects from "@/app/components/ResearchProjects"
