@@ -32,7 +32,7 @@ const Hero = () => {
                 Discover
                 <Typewriter
                     options={{
-                        strings: ['500+ Internships', 'Research opportunities', '& Alumni Connection'],
+                        strings: ['500+ Internships', 'Research opportunities', 'Alumni Connection'],
                         autoStart: true,
                         loop: true,
                     }}
