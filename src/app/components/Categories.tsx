@@ -8,7 +8,6 @@ function selectCategory(category: string) {
 }
 
 function getCategories(categories) {
-
     return categories.map((category, index) => (
         <div key={index} className='py-14 px-16 bg-white hover:bg-[#312bea] m-5'>
             <svg className="mb-6 " xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">

@@ -2,6 +2,8 @@
 import "@/app/styles/footerstyles.css";
 import Image from "next/image";
 import img from "@/app/images/logo_dark.png";
+import React, { useState } from 'react';
+
 const Logo = () => (
 	<Image
 	  src={img}// Corrected path, relative to the public folder
@@ -11,7 +13,13 @@ const Logo = () => (
 	/>
 );
 	
-export default function Footer(){
+export default function Footer() {
+    const [email, setEmail] = useState('')
+
+    const notifyEmail = () => {
+        alert("Signed up for notifications!\n" + email);
+    }
+
     return <footer className="bg-slate-800">
         <div className="bg-slate-800 flex mt-10 px-20 fobb">
             <div>
@@ -56,8 +64,8 @@ export default function Footer(){
             </p>
             <p className="foottexts">The latest job news, articles, sent to your inbox weekly.</p>
             <div className="flex my-5">
-                <input className="footInput" defaultValue="Email Address"></input>
-                <button className="footerButton mx-5">SUBMIT</button>
+                <input className="footInput" placeholder="Email Address" onChange={(e) => setEmail(e.target.value)}></input>
+                <button className="footerButton mx-5" onClick={() => notifyEmail()}>SUBMIT</button>
             </div>
         </div>
         

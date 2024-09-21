@@ -7,8 +7,7 @@ const Logo = () => (
 	<Image
 	  src={img}// Corrected path, relative to the public folder
 	  height={100} // Desired height
-	  width={500}
-       // Desired width
+	  width={500} // Desired width
 	  alt="Your Name"
 	/>
 );
