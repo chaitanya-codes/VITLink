@@ -73,11 +73,8 @@ export default function NextPage() {
           <button className="botbut my-5">SUBMIT</button>
           <h6 className="">By clicking &aposContinue&apos, you acknowledge that you have read and accept the Terms of Service and Privacy Policy.</h6>
           <h1>This is the Next Page</h1>
-
         </div>
-
       </div>
-
     </div>
   );
 }
