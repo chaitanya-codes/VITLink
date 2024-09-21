@@ -103,7 +103,11 @@ background: var(--Brands-Primary, #4640DE);
 .lbox{
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
 .photu{
-    
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-top: 50px;
+    width: 30lh;
 }
