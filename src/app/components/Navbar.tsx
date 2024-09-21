@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import img from "@/app/images/logo_dark.png";
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation'; // Import useRouter
 
 const Logo = () => (
 	<Image
@@ -12,11 +12,16 @@ const Logo = () => (
 	  alt="Your Name"
     />
 );
-
+		
 const Navbar = () => {
-    const router = useRouter();
-    const auth = (login: boolean) => {
-        login ? router.push('/login') : router.push('/signup');
+    const router = useRouter(); // Initialize useRouter
+
+    const auth = (isLogin) => {
+        if (isLogin) {
+            router.push('/login'); // Redirect to login page
+        } else {
+            router.push('/signup'); // Redirect to signup page
+        }
     }
     return (
         <div>

@@ -48,7 +48,7 @@ export const Categories = () => {
             <div className='grid grid-cols-4 grid-rows-2'>
                 {getCategories(["AI/ML", "NLP", "Electronics", "Automotive",
                     "Electrical", "Web Development", "Networks", "Cybersecurity"])};
-            </div>
+           3000 </div>
         </div>
     )
 }
