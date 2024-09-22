@@ -7,11 +7,14 @@ import Image from "next/image";
 import img from "@/app/images/logo.png";
 import { motion } from "framer-motion";
 import img2 from "@/app/images/jobby.png";
+import { db } from "@/db";
+import { InsertPost, InsertUser, postsTable, usersTable } from '@/db/schema';
 
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import "../styles/login.css"
+
 
 const firebaseConfig = {
 
@@ -105,9 +108,28 @@ export default function NextPage() {
             <p className="inlab">Password</p>
             <input placeholder="password" type="password" className="form"></input>
           
-          <button className="botbut my-5">Login</button>
+          <form action={async ()=>{
+            "use server";
+            await db.insert(usersTable).values({
+              name:"bob",
+              email:"example.com",
+              age:20,
+              
+            });
+            await db.insert(postsTable).values({
+              title: "hello moto",
+              content: "yolo",
+              userId:1
+            });
+          }
+          }><button className="botbut my-5">Login</button>
+          </form>
+          
         </div>
       </div>
     </div>
   );
 }
+
+//eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3MjY5Nzk3NDAsImlkIjoiYmM0MTgxZWMtYWU3YS00YWUxLTlhNmYtMDMzNjdjODUwOWY1In0.W8zsGErFl6Toyo7tCwwoyYIgMS_cgGfEdNqFrr1uFlHaoP8ZzcjonwPQCV9HIj9Ft5wiwBPvrY4op0P2IWnrBg
+//libsql://vitlinkdata-speeding-falcon.turso.io
