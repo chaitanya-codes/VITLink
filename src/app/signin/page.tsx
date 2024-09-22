@@ -1,4 +1,8 @@
-import { auth, signIn, signOut } from "@/auth"
+import { auth, signIn, signOut } from "@/auth";
+import React from "react";
+import { useRouter } from 'next/navigation';
+import "@/app/styles/sign.css";
+
 
 export default async function SignIn() {
   const session = await auth();
@@ -15,7 +19,7 @@ export default async function SignIn() {
           await signOut()
         }}
       >
-        <button className="google-signin" type="submit">Sign out</button>
+        <button className="gs" type="submit">Sign out</button>
       </form>
   </>
 )
