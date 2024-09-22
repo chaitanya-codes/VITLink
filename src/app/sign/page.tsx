@@ -21,7 +21,7 @@ export default async function SignIn() {
       </form>
   </>
 )
-  :(
+  :( <div className="flex items-center justify-center h-dvh">
       <form
         action={async () => {
           "use server"
@@ -29,7 +29,8 @@ export default async function SignIn() {
         }}
       >
 
-        <button type="submit" className="google-signin">Signin with Google</button>
+        <div ><button type="submit" className="google-signin">Signin with Google</button></div>
       </form>
+      </div>
     )
   } 

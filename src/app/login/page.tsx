@@ -7,18 +7,13 @@ import Image from "next/image";
 import img from "@/app/images/logo.png";
 import { motion } from "framer-motion";
 import img2 from "@/app/images/jobby.png";
-import { db } from "@/db";
+import Link from 'next/link';
+import { db } from '@/db/index';
 import { InsertPost, InsertUser, postsTable, usersTable } from '@/db/schema';
-
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import "../styles/login.css"
-
-
-const firebaseConfig = {
-
-};
 
 
 const handleGoogleLogin = async (auth) => {
@@ -90,7 +85,7 @@ export default function NextPage() {
           <p className="bigText py-10">Get, Create More Opportunities</p>
           <button className="Vbut flex bg-orange-100">
             <div><Logo></Logo></div>
-            <div className="vitText"><p className="text-2xl">Log in with VIT Mail</p></div>
+            <Link href="/sign"><div className="vitText"><p className="text-2xl" >Log in with VIT Mail</p></div></Link>
           </button>
           
           <div>
@@ -108,7 +103,7 @@ export default function NextPage() {
             <p className="inlab">Password</p>
             <input placeholder="password" type="password" className="form"></input>
           
-          <form action={async ()=>{
+           {/* <form action={async ()=>{
             "use server";
             await db.insert(usersTable).values({
               name:"bob",
@@ -123,7 +118,7 @@ export default function NextPage() {
             });
           }
           }><button className="botbut my-5">Login</button>
-          </form>
+          </form>  */}
           
         </div>
       </div>
