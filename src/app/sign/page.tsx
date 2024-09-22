@@ -1,8 +1,6 @@
-import { auth, signIn, signOut } from "@/auth";
-import React from "react";
-import { useRouter } from 'next/navigation';
-import "@/app/styles/sign.css";
-
+import React from 'react'
+import { auth, signIn, signOut } from "@/auth"
+import "@/app/styles/sign.css"; // Adjust to the correct path
 
 export default async function SignIn() {
   const session = await auth();
@@ -19,7 +17,7 @@ export default async function SignIn() {
           await signOut()
         }}
       >
-        <button className="gs" type="submit">Sign out</button>
+        <button className="text-white google-signin" type="submit">Sign out</button>
       </form>
   </>
 )
@@ -30,7 +28,8 @@ export default async function SignIn() {
           await signIn("google")
         }}
       >
-        <button type="submit">Signin with Google</button>
+
+        <button type="submit" className="google-signin">Signin with Google</button>
       </form>
     )
   } 
