@@ -28,7 +28,7 @@ const Hero = () => {
 
     return (
         <div>
-            <div className="slogan mb-4 font-russo">
+            <div className="slogan mb-4 font-russo ">
                 Discover
                 <Typewriter
                     options={{
