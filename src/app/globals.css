@@ -14,7 +14,14 @@
   }
 }
 
+* {
+  cursor: url("images/cursor.cur"), default;
+}
+
+
+
 body {
+  /* cursor: url("../images/dino"), pointer; */
   /* color: var(--foreground); */
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;

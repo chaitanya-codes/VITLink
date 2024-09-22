@@ -5,7 +5,7 @@ import Footer from "@/app/components/Footer";
 import ResearchProjects from "@/app/components/ResearchProjects"
 import Blueshape from "./components/Blueshape";
 import "@/app/styles/styles.css";
-import Dino from "./components/dino";
+import Dino from "@/app/components/Dino";
 
 
 export default function Home() {

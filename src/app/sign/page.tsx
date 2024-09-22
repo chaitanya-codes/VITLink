@@ -25,19 +25,18 @@ export default async function SignIn() {
   </>
 )
   :( <div className="flex items-center justify-center h-dvh">
-      <form
-        action={async () => {
-          "use server"
-          await signIn("google")
-        }}
-      >
+
        <form action={async ()=>{
+
             "use server";
+            await signIn("google")
             await db.insert(usersTable).values({
-              name: user.name,
-              email:user.email,
-              image:user.image,
-              
+              // name: user.name,
+              // email:user.email,
+              // image:user.image,
+              name: "1",
+              email: "xyz",
+              image:"pqr",
             });
             await db.insert(postsTable).values({
               title: "hello moto",
@@ -45,10 +44,9 @@ export default async function SignIn() {
               userId:1
             });
           }
-          }><button className="botbut my-5">Login</button>
+          }>
+            <button type="submit" className="google-signin">Signin with Google</button>
           </form> 
-        <div ><button type="submit" className="google-signin">Signin with Google</button></div>
-      </form>
       </div>
     )
   } 

@@ -30,13 +30,15 @@ const Hero = () => {
         <div>
             <div className="slogan mb-4 font-russo">
                 Discover
-                <Typewriter
-                    options={{
-                        strings: ['500+ Internships', 'Research opportunities', 'Alumni Connection'],
-                        autoStart: true,
-                        loop: true,
-                    }}
-                />
+                <div className="slogan-blue">
+                    <Typewriter
+                        options={{
+                            strings: ['500+ Internships', 'Research opportunities', 'Alumni Connection'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                </div>
             </div>
             <p className="grey-text ml-2">Great platform for the opportunity seeker</p>
             <p className="grey-text ml-2">that searching for new career heights and passionate about startups.</p>
