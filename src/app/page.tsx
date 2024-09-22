@@ -5,14 +5,18 @@ import Footer from "@/app/components/Footer";
 import ResearchProjects from "@/app/components/ResearchProjects"
 import Blueshape from "./components/Blueshape";
 import "@/app/styles/styles.css";
+import Dino from "./components/dino";
+
 
 export default function Home() {
+	
 	return (
 		<div>
 			<header>
 				<Navbar showLogin ={true}></Navbar>
 			</header>
 			<main className="m-28">
+				<div><Dino></Dino></div>
 				<Hero></Hero>
 				<Blueshape/>
 				{/* <div className="m-32 flex justify-center">

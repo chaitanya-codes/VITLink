@@ -8,12 +8,11 @@ import img from "@/app/images/logo.png";
 import { motion } from "framer-motion";
 import img2 from "@/app/images/jobby.png";
 import Link from 'next/link';
-import { db } from '@/db/index';
-import { InsertPost, InsertUser, postsTable, usersTable } from '@/db/schema';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import "../styles/login.css"
+
 
 
 const handleGoogleLogin = async (auth) => {
