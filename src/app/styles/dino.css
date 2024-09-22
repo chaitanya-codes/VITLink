@@ -22,10 +22,10 @@
   .pic {
     width: 100px;
     height: 100px;
-    opacity: 0;
-    animation-name: example;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    position: fixed;
-    
+    margin-left:0;
+    transition: margin-left 3s;
+  }
+
+  .pic:hover {
+    margin-left:1000px;
   }
