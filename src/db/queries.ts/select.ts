@@ -6,7 +6,7 @@ export async function getUserById(id: SelectUser['id']): Promise<
   Array<{
     id: number;
     name: string;
-    age: number;
+    image: string;
     email: string;
   }>
 > {
@@ -21,7 +21,7 @@ export async function getUsersWithPostsCount(
     postsCount: number;
     id: number;
     name: string;
-    age: number;
+    image: string;
     email: string;
   }>
 > {
